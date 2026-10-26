@@ -1,0 +1,335 @@
+
+<div class="wrap">
+<div class="deck" id="deck">
+  <div class="prog"><i id="pf"></i></div>
+
+  
+  <section class="slide active">
+    <div class="eyebrow rv">// проект</div>
+    <h1 class="rv" style="animation-delay:.08s">Продай не VPN.<br><span class="grad">Продай личный конфиг.</span></h1>
+    <p class="sub rv" style="animation-delay:.16s">Клиент вставляет конфиг в хаб или V2Ray — и он работает как его собственный сервер. Раздаёт — это его личный VPN. Тебя нигде не видно.</p>
+    <div class="term rv" style="animation-delay:.26s">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <div><span class="cur" id="tw"></span></div>
+    </div>
+    <div class="grid3 rv" style="animation-delay:.4s;margin-top:16px">
+      <div class="kpi"><b class="cnt" data-to="3">0</b><span>уровня схемы</span></div>
+      <div class="kpi"><b class="cnt" data-to="5" data-suf="c">0</b><span>выдача клиенту</span></div>
+      <div class="kpi"><b class="cnt" data-to="88" data-suf="%">0</b><span>маржа на своём</span></div>
+    </div>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// суть</div>
+    <h2 class="rv" style="animation-delay:.06s">Товар — <span class="grad">персональный конфиг</span>, а не подписка в приложении</h2>
+    <div class="grid3 rv" style="animation-delay:.16s">
+      <div class="card"><h3>Личный ключ</h3><p>Свой UUID, своё имя, свой порт. Выглядит и работает как отдельный сервер.</p></div>
+      <div class="card"><h3>Вставил — работает</h3><p>Хаб, V2Ray, Hiddify, sing-box. Никаких установок «нашего приложения».</p></div>
+      <div class="card"><h3>Раздал — его VPN</h3><p>Клиент раздаёт родным. Трафик идёт с обычного сервера, не с известного бренда.</p></div>
+    </div>
+    <div class="quote rv" style="animation-delay:.32s;margin-top:16px">Ключевой актив — <b>база клиентов и бренд</b>. Железо пересобирается за вечер, клиент не замечает.</div>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// архитектура</div>
+    <h2 class="rv" style="animation-delay:.06s">Общая схема</h2>
+    <svg viewBox="0 0 620 340" class="rv" style="animation-delay:.14s;width:100%">
+      <defs><marker id="a1" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#4b4b57"></path></marker></defs>
+      <g>
+        <rect x="6" y="130" width="102" height="56" rx="11" fill="rgba(56,189,248,.09)" stroke="#38bdf8" stroke-width="1"></rect>
+        <text x="57" y="152" class="lbl">Клиент</text><text x="57" y="168" class="lbl2">hub / v2ray</text>
+        <rect x="152" y="130" width="112" height="56" rx="11" fill="rgba(167,139,250,.09)" stroke="#a78bfa" stroke-width="1"></rect>
+        <text x="208" y="152" class="lbl">Твой домен</text><text x="208" y="168" class="lbl2">sub.ты.ру · CF</text>
+        <rect x="308" y="130" width="112" height="56" rx="11" fill="rgba(0,229,160,.09)" stroke="#00e5a0" stroke-width="1"></rect>
+        <text x="364" y="152" class="lbl">Панель</text><text x="364" y="168" class="lbl2">API · лимиты</text>
+        <rect x="464" y="46" width="148" height="38" rx="9" fill="rgba(0,229,160,.07)" stroke="#00e5a0" stroke-width="1" stroke-opacity=".6"></rect>
+        <text x="538" y="69" class="lbl">DE NL FR</text>
+        <rect x="464" y="92" width="148" height="38" rx="9" fill="rgba(0,229,160,.07)" stroke="#00e5a0" stroke-width="1" stroke-opacity=".6"></rect>
+        <text x="538" y="115" class="lbl">JP SG HK</text>
+        <rect x="464" y="138" width="148" height="38" rx="9" fill="rgba(0,229,160,.07)" stroke="#00e5a0" stroke-width="1" stroke-opacity=".6"></rect>
+        <text x="538" y="161" class="lbl">США</text>
+        <rect x="464" y="184" width="148" height="38" rx="9" fill="rgba(0,229,160,.07)" stroke="#00e5a0" stroke-width="1" stroke-opacity=".6"></rect>
+        <text x="538" y="207" class="lbl">TR AE</text>
+        <rect x="152" y="252" width="268" height="52" rx="11" fill="rgba(251,191,36,.08)" stroke="#fbbf24" stroke-width="1" stroke-opacity=".7"></rect>
+        <text x="286" y="274" class="lbl">Telegram-бот: оплата → автовыдача</text><text x="286" y="290" class="lbl2">crypto · stars · сбп → api</text>
+
+        <line x1="108" y1="158" x2="150" y2="158" stroke="#4b4b57" stroke-dasharray="5 4" marker-end="url(#a1)">
+          </line>
+        <line x1="264" y1="158" x2="306" y2="158" stroke="#4b4b57" stroke-dasharray="5 4" marker-end="url(#a1)">
+          </line>
+        <line x1="420" y1="148" x2="462" y2="104" stroke="#4b4b57" stroke-dasharray="5 4" marker-end="url(#a1)">
+          </line>
+        <line x1="420" y1="168" x2="462" y2="212" stroke="#4b4b57" stroke-dasharray="5 4" marker-end="url(#a1)">
+          </line>
+        <line x1="286" y1="252" x2="286" y2="188" stroke="#4b4b57" stroke-dasharray="5 4" marker-end="url(#a1)">
+          </line>
+      </g>
+    </svg>
+    <p class="m rv" style="animation-delay:.36s">Клиент видит только твой домен и свой конфиг. Всё, что глубже — твоя кухня.</p>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// закупка</div>
+    <h2 class="rv" style="animation-delay:.06s">Откуда брать конфиги</h2>
+    <p class="sub rv" style="animation-delay:.12s">Тебе нужен не сервер, а <b>доступ к панели с готовыми странами</b>. Тогда запуск — часы, а не недели.</p>
+    <div class="rv" style="animation-delay:.2s">
+      <div class="mrow"><span>Паблик</span><div class="mtrack"><div class="mfill" style="--w:14%;background:#ff6b6b"></div></div><span class="m">$0</span></div>
+      <div class="mrow"><span>Реселл *</span><div class="mtrack"><div class="mfill" style="--w:62%;background:#fbbf24"></div></div><span class="m">30–70 руб/юз</span></div>
+      <div class="mrow"><span>Свои VPS</span><div class="mtrack"><div class="mfill" style="--w:38%;background:#00e5a0"></div></div><span class="m">$1–3/узел</span></div>
+    </div>
+    <div class="grid3 rv" style="animation-delay:.32s;margin-top:14px">
+      <div class="card"><h3 class="bad">Паблик</h3><p>GitHub/Telegram коллекторы. Ноль затрат, без контроля. На бэк-полку.</p></div>
+      <div class="card" style="border-color:rgba(0,229,160,.5)"><h3 class="mid">Реселл-апстрим</h3><p>Админка с квотой у того, кто уже держит узлы. Страны готовы.</p></div>
+      <div class="card"><h3 class="ok">Свои VPS</h3><p>Максимальный контроль и маржа. Remnawave + узлы $1–3/мес.</p></div>
+    </div>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// худший расклад · уровень 01</div>
+    <h2 class="rv" style="animation-delay:.06s">Реселл-доступ к чужой панели</h2>
+    <svg viewBox="0 0 620 200" class="rv" style="animation-delay:.14s;width:100%">
+      <g>
+        <rect x="6" y="72" width="104" height="56" rx="11" fill="rgba(56,189,248,.09)" stroke="#38bdf8"></rect>
+        <text x="58" y="96" class="lbl">Клиент</text><text x="58" y="112" class="lbl2">свой конфиг</text>
+        <rect x="160" y="72" width="120" height="56" rx="11" fill="rgba(167,139,250,.09)" stroke="#a78bfa"></rect>
+        <text x="220" y="96" class="lbl">Твой домен</text><text x="220" y="112" class="lbl2">sub.ты.ру</text>
+        <rect x="330" y="72" width="120" height="56" rx="11" fill="rgba(251,191,36,.1)" stroke="#fbbf24"></rect>
+        <text x="390" y="96" class="lbl">Чужая панель</text><text x="390" y="112" class="lbl2">их админка</text>
+        <rect x="500" y="72" width="112" height="56" rx="11" fill="rgba(251,191,36,.1)" stroke="#fbbf24"></rect>
+        <text x="556" y="96" class="lbl">Их узлы</text><text x="556" y="112" class="lbl2">DE NL JP US</text>
+
+        <line x1="110" y1="100" x2="158" y2="100" stroke="#4b4b57" stroke-dasharray="5 4"></line>
+        <line x1="280" y1="100" x2="328" y2="100" stroke="#4b4b57" stroke-dasharray="5 4"></line>
+        <line x1="450" y1="100" x2="498" y2="100" stroke="#4b4b57" stroke-dasharray="5 4"></line>
+        <circle r="4" fill="#00e5a0"><animateMotion dur="2.4s" repeatCount="indefinite" path="M110,100 H498"></animateMotion></circle>
+      </g>
+    </svg>
+    <div class="meter rv" style="animation-delay:.3s">
+      <div class="mrow"><span>контроль</span><div class="mtrack"><div class="mfill" style="--w:45%;background:#fbbf24"></div></div></div>
+      <div class="mrow"><span>скрытность</span><div class="mtrack"><div class="mfill" style="--w:35%;background:#ff6b6b"></div></div></div>
+      <div class="mrow"><span>скорость старта</span><div class="mtrack"><div class="mfill" style="--w:95%;background:#00e5a0"></div></div></div>
+    </div>
+    <p class="m rv" style="animation-delay:.44s;margin-top:10px">Клиент видит тебя. Ты создаёшь юзеров сам. Минус — апстрим виден в конфиге как хост, и ты зависишь от чужой админки. Запуск — за день.</p>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// худший расклад · уровень 02</div>
+    <h2 class="rv" style="animation-delay:.06s">Своя панель, чужие узлы как бэкенд</h2>
+    <svg viewBox="0 0 620 200" class="rv" style="animation-delay:.14s;width:100%">
+      <g>
+        <rect x="6" y="72" width="104" height="56" rx="11" fill="rgba(56,189,248,.09)" stroke="#38bdf8"></rect>
+        <text x="58" y="96" class="lbl">Клиент</text><text x="58" y="112" class="lbl2">свой конфиг</text>
+        <rect x="160" y="72" width="120" height="56" rx="11" fill="rgba(167,139,250,.09)" stroke="#a78bfa"></rect>
+        <text x="220" y="96" class="lbl">Твой домен</text><text x="220" y="112" class="lbl2">sub.ты.ру</text>
+        <rect x="330" y="72" width="130" height="56" rx="11" fill="rgba(0,229,160,.1)" stroke="#00e5a0" stroke-width="1.5"></rect>
+        <text x="395" y="96" class="lbl">Твоя панель</text><text x="395" y="112" class="lbl2">marzban / remnawave</text>
+        <rect x="510" y="72" width="102" height="56" rx="11" fill="rgba(251,191,36,.1)" stroke="#fbbf24" stroke-dasharray="4 3"></rect>
+        <text x="561" y="96" class="lbl">Их узлы</text><text x="561" y="112" class="lbl2">бэкенд</text>
+
+        <line x1="110" y1="100" x2="158" y2="100" stroke="#4b4b57" stroke-dasharray="5 4"></line>
+        <line x1="280" y1="100" x2="328" y2="100" stroke="#4b4b57" stroke-dasharray="5 4"></line>
+        <line x1="460" y1="100" x2="508" y2="100" stroke="#4b4b57" stroke-dasharray="5 4"></line>
+        <circle r="4" fill="#00e5a0"><animateMotion dur="2.4s" repeatCount="indefinite" path="M110,100 H508"></animateMotion></circle>
+      </g>
+    </svg>
+    <div class="meter rv" style="animation-delay:.3s">
+      <div class="mrow"><span>контроль</span><div class="mtrack"><div class="mfill" style="--w:75%;background:#00e5a0"></div></div></div>
+      <div class="mrow"><span>скрытность</span><div class="mtrack"><div class="mfill" style="--w:60%;background:#fbbf24"></div></div></div>
+      <div class="mrow"><span>скорость старта</span><div class="mtrack"><div class="mfill" style="--w:65%;background:#38bdf8"></div></div></div>
+    </div>
+    <p class="m rv" style="animation-delay:.44s;margin-top:10px">Конфиги твои — панель твоя, лимиты и юзеры твои. Железо чужое. Апстрим уже не в интерфейсе клиента, но IP узлов его.</p>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// худший расклад · уровень 03</div>
+    <h2 class="rv" style="animation-delay:.06s">Свой VPS-вход + цепочка на апстрим</h2>
+    <svg viewBox="0 0 620 200" class="rv" style="animation-delay:.14s;width:100%">
+      <g>
+        <rect x="6" y="72" width="104" height="56" rx="11" fill="rgba(56,189,248,.09)" stroke="#38bdf8"></rect>
+        <text x="58" y="96" class="lbl">Клиент</text><text x="58" y="112" class="lbl2">свой конфиг</text>
+        <rect x="150" y="72" width="130" height="56" rx="11" fill="rgba(0,229,160,.12)" stroke="#00e5a0" stroke-width="1.5"></rect>
+        <text x="215" y="96" class="lbl">Твой VPS-вход</text><text x="215" y="112" class="lbl2">IP твой · твой домен</text>
+        <rect x="320" y="72" width="110" height="56" rx="11" fill="rgba(0,229,160,.06)" stroke="#00e5a0" stroke-dasharray="4 3"></rect>
+        <text x="375" y="96" class="lbl">Цепочка</text><text x="375" y="112" class="lbl2">relay</text>
+        <rect x="470" y="72" width="142" height="56" rx="11" fill="rgba(255,255,255,.03)" stroke="#4b4b57" stroke-dasharray="5 4"></rect>
+        <text x="541" y="96" class="lbl" opacity=".55">Апстрим</text><text x="541" y="112" class="lbl2" opacity=".7">не видно</text>
+
+        <line x1="110" y1="100" x2="148" y2="100" stroke="#4b4b57" stroke-dasharray="5 4"></line>
+        <line x1="280" y1="100" x2="318" y2="100" stroke="#4b4b57" stroke-dasharray="5 4"></line>
+        <line x1="430" y1="100" x2="468" y2="100" stroke="#4b4b57" stroke-dasharray="4 5" opacity=".6"></line>
+        <circle r="4" fill="#00e5a0"><animateMotion dur="2.2s" repeatCount="indefinite" path="M110,100 H468"></animateMotion></circle>
+      </g>
+    </svg>
+    <div class="meter rv" style="animation-delay:.3s">
+      <div class="mrow"><span>контроль</span><div class="mtrack"><div class="mfill" style="--w:90%;background:#00e5a0"></div></div></div>
+      <div class="mrow"><span>скрытность</span><div class="mtrack"><div class="mfill" style="--w:95%;background:#00e5a0"></div></div></div>
+      <div class="mrow"><span>скорость старта</span><div class="mtrack"><div class="mfill" style="--w:50%;background:#38bdf8"></div></div></div>
+    </div>
+    <p class="m rv" style="animation-delay:.44s;margin-top:10px">Апстрим вообще не видно, IP твой — <b>самый «невидимый» вариант</b>. Ровно то, что ты хочешь продавать. Снаружи это твой личный сервер.</p>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// сравнение</div>
+    <h2 class="rv" style="animation-delay:.06s">Три уровня рядом</h2>
+    <table class="rv" style="animation-delay:.14s">
+      <thead><tr><th>Уровень</th><th>Что твоё</th><th>Кто виден</th><th>Старт</th></tr></thead>
+      <tbody>
+        <tr><td><b>01</b> Реселл</td><td class="mid">только юзеры</td><td class="bad">апстрим виден</td><td>1 день</td></tr>
+        <tr><td><b>02</b> Своя панель</td><td class="ok">конфиги, юзеры, бренд</td><td class="mid">частично</td><td>3–5 дней</td></tr>
+        <tr><td><b>03</b> Свой вход</td><td class="ok">всё + IP</td><td class="ok">не видно никого</td><td>1–2 недели</td></tr>
+      </tbody>
+    </table>
+    <div class="grid2 rv" style="animation-delay:.3s;margin-top:14px">
+      <div class="card"><h3 class="ok">Начинай с 01</h3><p>Быстрые продажи и кэш, пока не соберёшь базу.</p></div>
+      <div class="card"><h3 class="ok">Цель — 03</h3><p>Максимальная скрытность и маржа. Сюда приводишь базу.</p></div>
+    </div>
+    <p class="m rv" style="animation-delay:.42s;margin-top:12px">Переход между уровнями незаметен для клиента: меняешь бэкенд, конфиг тот же.</p>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// автоматика</div>
+    <h2 class="rv" style="animation-delay:.06s">Выдача за секунды, без тебя</h2>
+    <div class="pipe rv" style="animation-delay:.16s" id="pipe">
+      <div class="step"><b>Оплата</b><span>крипта / stars</span></div><span class="arrow">→</span>
+      <div class="step"><b>Бот</b><span>видит платёж</span></div><span class="arrow">→</span>
+      <div class="step"><b>API</b><span>create user</span></div><span class="arrow">→</span>
+      <div class="step"><b>Конфиг</b><span>UUID + лимит</span></div><span class="arrow">→</span>
+      <div class="step"><b>У клиента</b><span>3–5 секунд</span></div>
+    </div>
+    <div class="grid2 rv" style="animation-delay:.3s">
+      <div class="card"><h3>Что нужно</h3><p>Панель с REST API + бот, который её дёргает. Готовые боты есть — дописываешь оплату.</p></div>
+      <div class="card"><h3>Что даёт</h3><p>Продажи 24/7, продления, лимиты, отключение при неоплате — автоматом.</p></div>
+    </div>
+    <p class="m rv" style="animation-delay:.42s;margin-top:12px">Скорость выдачи — твоё конкурентное преимущество: заплатил и <b>сразу</b> получил рабочий конфиг.</p>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// white-label</div>
+    <h2 class="rv" style="animation-delay:.06s">Свой домен — почти бесплатно</h2>
+    <div class="grid2 rv" style="animation-delay:.14s">
+      <div class="card"><h3 class="ok">твоё</h3><p>Домен подписки, имена и флаги конфигов, лого, бренд, бот, лендинг.</p></div>
+      <div class="card"><h3 class="bad">чужое</h3><p>IP выходных узлов. Клиент их в интерфейсе не видит.</p></div>
+    </div>
+    <div class="rv" style="animation-delay:.26s;margin-top:12px">
+      <span class="pill">домен ~900 руб/год</span><span class="pill">CNAME на апстрим</span><span class="pill">Cloudflare free</span><span class="pill a">свой конвертер подписки</span>
+    </div>
+    <table class="rv" style="animation-delay:.36s;margin-top:14px">
+      <thead><tr><th>Вариант</th><th>Цена</th><th>Итог</th></tr></thead>
+      <tbody>
+        <tr><td>DIY: домен + CNAME + воркер</td><td class="ok">~80 руб/мес</td><td>Полный бренд и контроль</td></tr>
+        <tr><td>Платная опция у апстрима</td><td class="bad">+400–1600 руб/мес</td><td>Проще, но дороже</td></tr>
+      </tbody>
+    </table>
+    <p class="m rv" style="animation-delay:.46s;margin-top:8px">Апстрим видит только твой домен — не твоих клиентов.</p>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// продукт</div>
+    <h2 class="rv" style="animation-delay:.06s">Пакеты и тарифы</h2>
+    <p class="sub rv" style="animation-delay:.1s">Планка рынка — <b>600 руб / 6 мес</b> (около 100 руб/мес). Себестоимость позволяет идти ниже.</p>
+    <div class="grid2 rv" style="animation-delay:.18s">
+      <div class="card"><h3>Гео-пакеты</h3><span class="pill">Азия</span><span class="pill">Европа</span><span class="pill">США</span><span class="pill a">Мир</span></div>
+      <div class="card"><h3>Интересы</h3><span class="pill">Стриминг</span><span class="pill">Гейминг</span><span class="pill">Резерв</span><span class="pill">Семья</span></div>
+    </div>
+    <div class="grid3 rv" style="animation-delay:.3s;margin-top:12px">
+      <div class="tier"><div class="n">Базовый</div><div class="p">150<small> руб/мес</small></div><div class="d">1 регион · 100 ГБ · 2 устройства</div></div>
+      <div class="tier hl"><div class="n">Мир</div><div class="p">300<small> руб/мес</small></div><div class="d">все локации · 300 ГБ · 5 устройств</div></div>
+      <div class="tier"><div class="n">Полгода</div><div class="p">600<small> руб</small></div><div class="d">−40% · всё включено</div></div>
+    </div>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// экономика</div>
+    <h2 class="rv" style="animation-delay:.06s">Себестоимость и маржа</h2>
+    <div class="chartbox rv" style="animation-delay:.14s"><canvas id="ch"></canvas></div>
+    <div class="leg rv" style="animation-delay:.2s"><span><i style="background:#00e5a0"></i>себестоимость, руб/мес</span><span><i style="background:#38bdf8"></i>розница 100 руб</span></div>
+    <div class="calc rv" style="animation-delay:.3s">
+      <div class="ctl"><label>цена, руб/мес <b id="v1">100</b></label><input id="s1" type="range" min="50" max="400" step="10" value="100"></div>
+      <div class="ctl"><label>клиентов <b id="v2">300</b></label><input id="s2" type="range" min="10" max="2000" step="10" value="300"></div>
+      <div class="ctl"><label>себестоимость, руб/юз <b id="v3">40</b></label><input id="s3" type="range" min="2" max="150" step="2" value="40"></div>
+      <div class="ctl"><label>платежи+прочее, руб/юз <b id="v4">40</b></label><input id="s4" type="range" min="0" max="120" step="5" value="40"></div>
+    </div>
+    <div class="out rv" style="animation-delay:.4s">
+      <div class="b"><span>выручка</span><b id="o1">—</b></div>
+      <div class="b"><span>расход</span><b id="o2">—</b></div>
+      <div class="b"><span>прибыль</span><b id="o3">—</b></div>
+    </div>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// позиционирование</div>
+    <h2 class="rv" style="animation-delay:.06s">Что говоришь клиенту</h2>
+    <div class="quote rv" style="animation-delay:.14s;font-size:14.5px">«Это не VPN-приложение — это <b>ваш личный конфиг</b>. Вставили в хаб или V2Ray — работает как ваш собственный сервер. Раздадите — это ваш личный VPN. Вас нигде не видно: трафик идёт с обычного сервера, а не с известного VPN, поэтому блокируют дольше. Берите пакетом на полгода — недорого».</div>
+    <div class="grid2 rv" style="animation-delay:.28s;margin-top:14px">
+      <div class="card"><h3>Честный плюс</h3><p>Reality-конфиг — прокси, а не полный туннель. Весь трафик не идёт через один сервер, вычислить сложнее.</p></div>
+      <div class="card"><h3>«Работает всегда» = техника</h3><p>Health-check, авто-фейловер, ротация IP, несколько протоколов в одной подписке.</p></div>
+    </div>
+    <div class="rv" style="animation-delay:.4s;margin-top:12px">
+      <span class="pill">VLESS + Reality</span><span class="pill">Hysteria2</span><span class="pill">TUIC</span><span class="pill">Shadowsocks-2022</span><span class="pill">AmneziaWG</span>
+    </div>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// риски</div>
+    <h2 class="rv" style="animation-delay:.06s">О чём молчат конкуренты</h2>
+    <ul class="t rv" style="animation-delay:.14s">
+      <li><b>Абьюз юзеров.</b> Торренты и скам съедают дешёвый трафик — заложи лимиты 100–300 ГБ.</li>
+      <li><b>Блокировка IP.</b> Нужен запас узлов и быстрая замена.</li>
+      <li><b>Зависимость от апстрима.</b> Он лёг — лёг ты. Держи два источника.</li>
+      <li><b>Оплата.</b> Крипта, Stars, СБП. Заложи 4–10% на эквайринг.</li>
+      <li><b>Демпинг.</b> Выигрываешь стабильностью и поддержкой, а не ценой.</li>
+    </ul>
+    <p class="m rv" style="animation-delay:.34s;margin-top:10px">Защита одна: <b>своя база + свой домен</b>. Тогда смена бэкенда не видна никому, кроме тебя.</p>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// план</div>
+    <h2 class="rv" style="animation-delay:.06s">Запуск за 2 недели</h2>
+    <div class="tl rv" style="animation-delay:.14s">
+      <div class="it"><b>День 1–2 · домен + Cloudflare</b><p>DNS, TLS. Это бренд и защита от блокировок.</p></div>
+      <div class="it"><b>День 3–5 · доступ к панели</b><p>Реселл-доступ или Remnawave на 2–3 VPS со странами.</p></div>
+      <div class="it"><b>День 6–9 · бот + оплата</b><p>Автовыдача через API, крипта и Stars, лимиты.</p></div>
+      <div class="it"><b>День 10–11 · пакеты и цены</b><p>3 пакета, триал, допродажи, переименование конфигов.</p></div>
+      <div class="it"><b>День 12–14 · инструкции и старт</b><p>Гайды под Hiddify / V2Ray / хаб, первые продажи.</p></div>
+    </div>
+    <p class="m rv" style="animation-delay:.36s">Метрики: клиентов на узел, отток, средний чек. Отток низкий — поднимай цену.</p>
+  </section>
+
+  
+  <section class="slide">
+    <div class="eyebrow rv">// итог</div>
+    <h2 class="rv" style="animation-delay:.06s">Три вещи, которые решают всё</h2>
+    <div class="grid3 rv" style="animation-delay:.14s">
+      <div class="card"><div class="kpi" style="border:0;background:0;padding:0 0 6px"><b>01</b></div><h3>Источник</h3><p>Реселл для скорости, свои узлы для маржи.</p></div>
+      <div class="card"><div class="kpi" style="border:0;background:0;padding:0 0 6px"><b>02</b></div><h3>Автоматика</h3><p>Бот и API: оплата → выдача за секунды.</p></div>
+      <div class="card"><div class="kpi" style="border:0;background:0;padding:0 0 6px"><b>03</b></div><h3>Бренд</h3><p>Свой домен. Клиент твой, а не апстрима.</p></div>
+    </div>
+    <div class="quote rv" style="animation-delay:.3s;margin-top:16px">Иди по уровням <b>01 → 02 → 03</b>. Начинай продавать сразу, а «невидимость» уровня 03 достраивай на живых деньгах.</div>
+  </section>
+
+  <div class="nav">
+    <button id="prev">‹</button>
+    <div class="navdots" id="nd"></div>
+    <button id="next">›</button>
+  </div>
+</div>
+<div class="hint">слайд <b id="pos">1</b> / 16 &nbsp;·&nbsp; ← → или свайп</div>
+</div>
+
+
+
+
